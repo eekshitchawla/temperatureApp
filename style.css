@@ -1,28 +1,63 @@
-html{    
-    background-color: #edb88b;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+html {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2ad5c7d4;
 }
-button, input{
-    padding: 20px;
-    outline: none;
-    border: none;
-    border-radius: 10px;
+#app-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #ef5734; */
+  background-image: linear-gradient(90deg, #2a8ed5 0%, #55a5dd 100%);
+  height: 60vh;
+  width: 60vw;
+  border-radius: 30px;
+  flex-direction: column;
 }
-a{
-    text-decoration: none;
-    color: black;
+button,
+input {
+  font-weight: 700;
+  background-color: #fff;
+  padding: 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
 }
-.result{
-    color: white;
-    padding: 20px;
-    font-size: 30px;
-    font-weight: 400;
+a:hover,
+button:hover {
+  background-color: transparent;
+  color: white;
+  transition: background-color 0.5s ease-in-out;
 }
-.box{
-    display: flex;
+a {
+  text-decoration: none;
+  color: black;
+}
+.result {
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: 400;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  #app-container {
+    padding: 5px 0;
+    width: 100vw;
+    text-align: center;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    border-radius: 0;
+    font-size: 10px;
+  }
 }
